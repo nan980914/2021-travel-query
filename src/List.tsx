@@ -1,34 +1,34 @@
 import React, { useState } from 'react';
 
-class DynamicList extends React.Component {
-    constructor(props: any) {
+// class DynamicList extends React.Component {
+//     constructor(props: any) {
         
-        super(props)
-        this.state = {
-            list: []
-        }
-    }
-    addList(item: any) {
-        this.state.list.push(item)
-        this.setState({
-            list: this.state.list
-        })
-    }
-    render() {
-        return (
-            <>
-                {
-                    this.props.children(this.state.list, this.addList)
-                }
-            </>
-        )
-    }
-}
+//         super(props)
+//         this.state = {
+//             list: []
+//         }
+//     }
+//     addList(item: any) {
+//         this.state.list.push(item)
+//         this.setState({
+//             list: this.state.list
+//         })
+//     }
+//     render() {
+//         return (
+//             <>
+//                 {
+//                     this.props.children(this.state.list, this.addList)
+//                 }
+//             </>
+//         )
+//     }
+// }
 
 
 
 
-<DynamicList>
+{/* <DynamicList>
 {
 (list, addList) => {
     list.map(item => {
@@ -36,7 +36,7 @@ class DynamicList extends React.Component {
     })    
 }
 }
-</DynamicList>
+</DynamicList> */}
 
 
 // const useDynamicList1 = () => {
