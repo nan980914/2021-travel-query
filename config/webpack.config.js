@@ -538,7 +538,6 @@ module.exports = function (webpackEnv) {
               use: getStyleLoaders(
                 {
                   importLoaders: 1,
-                  modules:true,
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
