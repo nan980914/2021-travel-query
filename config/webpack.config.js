@@ -537,7 +537,7 @@ module.exports = function (webpackEnv) {
               test: lessRegex,
               use: getStyleLoaders(
                 {
-                  importLoaders: 1,
+                  importLoaders: 3,
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
